@@ -9,7 +9,7 @@ And VerifySignature to validate the signature using private ssh key.
 openssl req -x509 -nodes -newkey rsa:2048 -keyout private-key.pem -out public-key.pem
 ```
 
-# Convert PEM to DER
+## Convert PEM to DER
 ```
 openssl x509 -outform der -in private-key.pem -out private-key.der
 ```
