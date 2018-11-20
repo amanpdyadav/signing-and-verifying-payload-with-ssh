@@ -1,0 +1,246 @@
+{
+    "username": "Anonymous",
+    "token": "TOKEN",
+    "lang": "en",
+    "decimalSeparator": ".",
+    "variables": [
+        {
+            "name": "x",
+            "type": "real"
+        },
+        {
+            "name": "y",
+            "type": "real"
+        },
+        {
+            "name": "z",
+            "type": "real"
+        }
+    ],
+    "constants": [],
+    "theories": [
+        "real.Real",
+        "real.PowerReal",
+        "real.Square",
+        "real.Abs",
+        "real.FromInt",
+        "real.ExpLog",
+        "extra.ExtendPowerReal",
+        "extra.GeneralLog"
+    ],
+    "name": "structuredderivationAnonymous20160425133830211901",
+    "steps": [
+        {
+            "question": [
+                {
+                    "text": "Solve the inequality $x^5+4x^4+4x^3-4x^2-5x\\ge0$",
+                    "type": "solve",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_task_0"
+                }
+            ],
+            "assumptions": [],
+            "observations": [],
+            "taskJustification": [],
+            "terms": [
+                {
+                    "expr": "x^5+4x^4+4x^3-4x^2-5x\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_0"
+                },
+                {
+                    "expr": "x\\left(x^4+4x^3+4x^2-4x-5\\right)\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_1"
+                },
+                {
+                    "expr": "x\\left(x^4+4x^3+5x^2-x^2-4x-5\\right)\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_2"
+                },
+                {
+                    "expr": "x\\left(\\left(x^4-x^2\\right)+\\left(4x^3-4x\\right)+\\left(5x^2-5\\right)\\right)\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_3"
+                },
+                {
+                    "expr": "x\\left(x^2\\left(x^2-1\\right)+4x\\left(x^2-1\\right)+5\\left(x^2-1\\right)\\right)\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_4"
+                },
+                {
+                    "expr": "x\\left(x^2-1\\right)\\left(x^2+4x+5\\right)\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_5"
+                },
+                {
+                    "expr": "x\\left(x^2-1\\right)\\left(x^2+4x+4+1\\right)\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_6"
+                },
+                {
+                    "expr": "x\\left(x^2-1\\right)\\left(\\left(x+2\\right)^2+1\\right)\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_7"
+                },
+                {
+                    "expr": "x\\left(x^2-1\\right)\\ge0",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_8"
+                },
+                {
+                    "expr": "\\left(x\\ge0\\wedge\\left(x^2-1\\right)\\ge0\\right)\\vee\\left(x\\le0\\wedge\\left(x^2-1\\right)\\le0\\right)",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_9"
+                },
+                {
+                    "expr": "\\left(x\\ge0\\wedge x^2\\ge1\\right)\\vee\\left(x\\le0\\wedge x^2\\le1\\right)",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_10"
+                },
+                {
+                    "expr": "\\left(x\\ge0\\wedge\\left(x\\le-1\\vee x\\ge1\\right)\\right)\\vee\\left(x\\le0\\wedge\\left(x\\ge-1\\wedge x\\le1\\right)\\right)",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_11"
+                },
+                {
+                    "expr": "\\left(x\\ge1\\right)\\vee\\left(x\\ge-1\\wedge x\\le0\\right)",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_12"
+                },
+                {
+                    "expr": "\\left(x\\ge-1\\wedge x\\le0\\right)\\vee\\left(x\\ge1\\right)",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_term_13"
+                }
+            ],
+            "relations": [
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_0"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_1"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_2"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_3"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_4"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_5"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_6"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_7"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_8"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_9"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_10"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_11"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_relation_12"
+                }
+            ],
+            "justifications": [
+                {
+                    "text": "factor out $x$",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_0",
+                    "nestedTask": []
+                },
+                {
+                    "text": "$4x^2=5x^2-x^2$",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_1",
+                    "nestedTask": []
+                },
+                {
+                    "text": "rewrite the expression in parentheses by grouping certain terms together",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_2",
+                    "nestedTask": []
+                },
+                {
+                    "text": "factor out $x^2$ from the first term in the parentheses, $4x$ from the second term, and 5 from the third term",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_3",
+                    "nestedTask": []
+                },
+                {
+                    "text": "factor out $x^2-1$",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_4",
+                    "nestedTask": []
+                },
+                {
+                    "text": "$5\\: =\\: 4\\: +\\: 1$",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_5",
+                    "nestedTask": []
+                },
+                {
+                    "text": "formula of the square of a sum of two elements",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_6",
+                    "nestedTask": []
+                },
+                {
+                    "text": "$\\left(x+2\\right)^2\\: +1\\gt0$ for any $x$, so we can divide both sides of the inequality by $\\left(x+2\\right)^2+1$",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_7",
+                    "nestedTask": []
+                },
+                {
+                    "text": "$ab\\ge0$ iff $a$ and $b$ have the same sign",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_8",
+                    "nestedTask": []
+                },
+                {
+                    "text": "add 1 to both sides of the second conjunct",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_9",
+                    "nestedTask": []
+                },
+                {
+                    "text": "solve $x^2\\ge1$ and $x^2\\le1$",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_10",
+                    "nestedTask": []
+                },
+                {
+                    "text": "simplify",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_11",
+                    "nestedTask": []
+                },
+                {
+                    "text": "rewrite in the \"natural order\"",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_motivation_12",
+                    "nestedTask": []
+                }
+            ],
+            "answer": [
+                {
+                    "text": "$\\left(-1\\le x\\le0\\right)\\vee\\left(x\\ge1\\right)$",
+                    "loc": "structuredderivationAnonymous20160425133830211901_step_0_task_0_answer"
+                }
+            ],
+            "loc": "structuredderivationAnonymous20160425133830211901_step_0",
+            "steptype": "task"
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "username": "Anonymous",
+    "token": "TOKEN",
+    "lang": "en",
+    "decimalSeparator": ".",
+    "variables": [
+        {
+            "name": "x",
+            "type": "real"
+        },
+        {
+            "name": "y",
+            "type": "real"
+        },
+        {
+            "name": "z",
+            "type": "real"
+        }
+    ],
+    "constants": [],
+    "theories": [
+        "real.Real",
+        "real.PowerReal",
+        "real.Square",
+        "real.Abs",
+        "real.FromInt",
+        "real.ExpLog",
+        "extra.ExtendPowerReal",
+        "extra.GeneralLog"
+    ],
+    "name": "structuredderivationAnonymous20160426114337351652",
+    "steps": [
+        {
+            "question": [
+                {
+                    "text": "Solve equiation $x^2-2x+1=0$",
+                    "type": "solve",
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_task_0"
+                }
+            ],
+            "assumptions": [],
+            "observations": [],
+            "taskJustification": [],
+            "terms": [
+                {
+                    "expr": "x^2-2x+1=0",
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_term_0"
+                },
+                {
+                    "expr": "\\left(x-1\\right)^2=0",
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_term_1"
+                },
+                {
+                    "expr": "x=1.0",
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_term_2"
+                }
+            ],
+            "relations": [
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_relation_0"
+                },
+                {
+                    "expr": "\\Leftrightarrow",
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_relation_1"
+                }
+            ],
+            "justifications": [
+                {
+                    "text": "Square of $x-1$",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_motivation_0",
+                    "nestedTask": []
+                },
+                {
+                    "text": "Trivially",
+                    "hidden": false,
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_motivation_1",
+                    "nestedTask": []
+                }
+            ],
+            "answer": [
+                {
+                    "text": "$x=1.0$",
+                    "loc": "structuredderivationAnonymous20160426114337351652_step_0_task_0_answer"
+                }
+            ],
+            "loc": "structuredderivationAnonymous20160426114337351652_step_0",
+            "steptype": "task"
+        }
+    ]
+}
